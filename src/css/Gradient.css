@@ -1,0 +1,59 @@
+.panel-gradient {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.panel-gradient {
+  width: var(--panel-width);
+  padding: 2rem 5%;
+}
+
+.gradient-background {
+  width: var(--gradient-panel-width);
+  height: 3rem;
+}
+
+.gradient-points-wrapper {
+  position: absolute;
+  top: 2rem;
+  left: 9.5%;
+
+  height: 3rem;
+  width: 81%;
+}
+
+.gradient-point {
+  position: absolute;
+  width: 1rem;
+  height: 4rem;
+
+  border: 2px solid black;
+  border-radius: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  transform: translateY(-12.5%);
+
+  cursor: pointer;
+}
+
+.gradient-point.selected {
+  box-shadow: 0px 0px 20px 0px rgb(0, 100, 255);
+  -webkit-box-shadow: 0px 0px 20px 0px rgb(0, 100, 255);
+  -moz-box-shadow: 0px 0px 20px 0px rgb(0, 100, 255);
+}
+
+.gradient-point-color {
+  width: calc(50% + 2px);
+  height: calc(75% + 2px);
+  border-radius: 0.5rem;
+}

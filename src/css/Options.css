@@ -1,0 +1,113 @@
+.panel-options {
+  position: relative;
+  left: 0;
+  width: var(--panel-width);
+  padding: 1rem 5%;
+
+  border-top: 1px solid #bbbfc5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gradient-type-wrapper,
+.gradient-direction-wrapper {
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-type-wrapper {
+  width: 12.75rem;
+
+  border: 1px solid #bbbfc5;
+  border-radius: 0.5rem;
+}
+
+.gradient-type-wrapper > button {
+  width: 50%;
+  height: 100%;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #bbbfc5;
+}
+
+button.linear {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+button.radial {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.gradient-type-wrapper > button.active {
+  background-color: #1f2667;
+  color: white;
+}
+
+.gradient-direction-wrapper {
+  width: 7.375rem;
+
+  justify-content: space-around;
+}
+
+.gradient-direction-wrapper > .gradient-angle {
+  position: relative;
+  width: 2.75rem;
+  height: 2.75rem;
+
+  border: 3px solid #1f2667;
+  border-radius: 50%;
+}
+
+.gradient-direction-wrapper > .gradient-angle > .point-wrapper {
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+
+  top: -0.25rem;
+  left: -0.2rem;
+}
+
+.gradient-direction-wrapper > .gradient-angle > .point-wrapper > .point {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.175rem;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: #1f2667;
+
+  border-radius: 50%;
+}
+
+.gradient-direction-wrapper > input {
+  width: 3.5rem;
+  height: 2.75rem;
+
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+
+  border: 1px solid #c5c5c5;
+  border-radius: 0.375rem;
+
+  text-align: center;
+}
+
+.gradient-direction-wrapper > input:focus {
+  outline: none;
+  border: 2px solid #1f2667;
+}
